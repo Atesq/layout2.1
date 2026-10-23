@@ -1,0 +1,48 @@
+body{
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(12fr 1fr);
+    grid-template-rows: 1fr 2fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "kutu1 kutu1 kutu1 kutu2 kutu2 kutu2 kutu3 kutu3 kutu3 kutu4 kutu4 kutu4"
+    "sag sag sag sag orta orta orta orta sol sol sol sol"
+    "footer footer footer footer footer footer footer footer footer footer footer footer"
+    ;
+}
+header{
+    grid-area: header;
+    background-color: rgb(31, 72, 69);
+}
+div.kutu1{
+    grid-area: kutu1;
+    background-color: rgb(65, 101, 101);
+}
+div.kutu2{
+    grid-area: kutu2;
+    background-color: rgb(8, 162, 162);
+}
+div.kutu3{
+    grid-area: kutu3;
+    background-color: aqua;
+}
+div.kutu4{
+    grid-area: kutu4;
+    background-color: rgb(11, 40, 40);
+}
+section.sag{
+    grid-area: sag;
+    background-color: rgb(131, 171, 171);
+}
+section.orta{
+    grid-area: orta;
+    background-color: rgb(194, 251, 251);
+}
+section.sol{
+    grid-area: sol;
+    background-color: rgb(0, 130, 130);
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(83, 117, 117);
+}
